@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.box{
+		border: 2px solid red;
+	}
+	#login {
+		position: absolute; 
+		top:24px; 
+		left:80%; 
+		width:60px; 
+		height:26px;
+		font-size:12px; 
+		color:rgb(255,255,255); 
+		text-align:center; 
+		line-height: 2em; 
+		border-radius: 4px; 
+		background-color:rgb(89,202,183);
+	}
+	#login a{
+	font-size: 12px;
+	margin: auto;
+	}
+	#join{
+		position: absolute; 
+		top:24px; 
+		left:85%; 
+		width:60px; 
+		height:26px;
+		font-size:12px; color:rgb(255,255,255); 
+		text-align:center; 
+		line-height: 2em; 
+		border-radius: 4px; 
+		background-color:rgb(89,202,183);
+	}
+	#join a{
+	 font-size: 12px;
+	}
+	
+	#menu{
+		background: rgb(89, 202, 183);
+		text-align: center;
+		margin : 0 auto;
+		margin-left: 15%;
+	}
+	
+	a{
+		text-decoration: none;
+		font-size: 30px;
+		color: white;
+	}
+	
+	#menu div{
+		display: inline-block;
+		margin-right: 100px;
+	}
+	
+</style>
+</head>
+<body>
+	<header></header>
+	<a href="Main.jsp" id ="logo">LOGO</a>
+		
+			<div id="login"><a href="Login.jsp">LOGIN</a></div>
+			<div id="join">
+			<a href="Member.jsp"><span>JOIN</span></a></div>
+		
+	<div id="menu" align="center" style="width: 100% ; height: 80px;">
+	
+		<div class="sub_menu"><a href="">회원정보 조회</a></div>
+		
+		<div class="sub_menu2"><a href="">예매 확인/취소</a></div>
+		
+		<div class="sub_menu3"><a href="">즐겨찾기</a></div>
+		
+		<div class="sub_menu4"><a href="">회원탈퇴</a></div>
+		
+	</div>
+	
+</body>
+</html>
