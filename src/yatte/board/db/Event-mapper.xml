@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="muldelmapper">
+
+	<resultMap type="yatte.board.dto.EventDto" id="dtoMap">
+		<result column="NUM" property = "num" />
+		<result column="PWD" property = "pwd" />
+		<result column="NAME" property = "name" />
+		<result column="SUBJECT" property = "subject" />
+		<result column="CONTENT" property = "content" />
+		<result column="REGDATE" property = "regdate" /> 
+	</resultMap>	
+
+	<select id="listBoard" resultType = "yatte.board.dto.EventDto">
+		select * from board order by num desc
+	</select>
+	
+	<delete id="muldel" parameterType="map">
+		delete from board
+		where num in
+		<foreach collection="nums" item="num"
+			open="(" separator="," close=")">
+			#{num}	
+		</foreach>
+	</delete>
+	
+	<select id="selectOne" resultType = "yatte.board.dto.EventDto">
+		select * from board where num = #{num}
+	</select>		
+
+	<insert id="insert" parameterType="EventDto">
+		<!-- insert into board 
+		values((select NVL(max(#{num}),0)+1 from board),#{name},#{pwd},#{subject},#{content},SYSDATE,0,(select NVL(max(#{num}),0)+1 from board),0,0) -->
+		
+		insert into board 
+		values((select NVL(max(num),0)+1 from board),name,pwd,subject,content,SYSDATE,0,(select NVL(max(num),0)+1 from board),0,0)
+	</insert>
+
+</mapper>
