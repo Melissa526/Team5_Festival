@@ -35,77 +35,77 @@ td{
 	<br/><br/><br/><br/><br/>
 	<div id="center">
 		<div
-			style="background-color: rgb(255, 255, 255); border-width: 1px; border-style: dotted; border-color: rgb(51, 51, 51); height: 60px; width: 1000px; text-align: center; vertical-align: center;">
+			style="background-color: rgb(255, 255, 255); border-width: 1px; border-style: dotted; border-color: rgb(51, 51, 51); height: 60px; width: 935px; text-align: center; vertical-align: center;">
 
 			<div style="font-size: 16px; margin: auto;">
-				Á¶È¸±â°£¼±ÅÃ
+				ì¡°íšŒê¸°ê°„ì„ íƒ
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">7ÀÏ</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">7ì¼</button>
 
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">15ÀÏ</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">15ì¼</button>
 
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">1°³¿ù</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">1ê°œì›”</button>
 
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">5°³¿ù</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">5ê°œì›”</button>
 
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">1³â</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(89, 202, 183); width: 60px; height: 26px;">1ë…„</button>
 
-				<label>ÁÖ¹®ÀÏÀÚº°</label> <input type="text"
+				<label>ì£¼ë¬¸ì¼ìžë³„</label> <input type="text"
 					style="width: 100px; height: 30px;"> <input type="text"
 					style="width: 100px; height: 30px;"> <input type="text"
 					style="width: 100px; height: 30px;">
 
 				<button id="button"
-					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(240, 123, 125); width: 60px; height: 26px;">È®ÀÎ</button>
+					style="font-size: 14px; color: rgb(255, 255, 255); text-align: center; background-color: rgb(240, 123, 125); width: 60px; height: 26px;">í™•ì¸</button>
 
 			</div>
 		</div>
 	
 		<br/>
 
-		<input id="radio" type="radio" style="width: 20px; height: 20px;"> ÀüÃ¼
-		<input type="radio" style="width: 20px; height: 20px;"> ¿¹¾à
-		<input type="radio" style="width: 20px; height: 20px;"> Ãë¼Ò
+		<input id="radio" type="radio" style="width: 20px; height: 20px;"> ì „ì²´
+		<input type="radio" style="width: 20px; height: 20px;"> ì˜ˆì•½
+		<input type="radio" style="width: 20px; height: 20px;"> ì·¨ì†Œ
 
 		<br/><br/>
 		
 		<table>
 			<tbody>
 				<tr align="center" style="background-color: skyblue;">
-					<th style="width: 135px; height: 45px;">&nbsp;¿¹¸ÞÀÏ</th>
-					<th style="width: 135px; height: 45px;">&nbsp;¿¹¸Å¹øÈ£</th>
-					<th style="width: 239px; height: 45px;">&nbsp;»óÇ°¸í</th>
-					<th style="width: 135px; height: 45px;">&nbsp;ÀÌ¿ëÀÏ/¸Å¼ö</th>
-					<th style="width: 136px; height: 45px;">&nbsp;Ãë¼Ò °¡´É ¿©ºÎ</th>
-					<th style="width: 136px; height: 45px;">&nbsp;ÇöÀç»óÅÂ</th>
+					<th style="width: 135px; height: 45px;">&nbsp;ì˜ˆë©”ì¼</th>
+					<th style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ë²ˆí˜¸</th>
+					<th style="width: 239px; height: 45px;">&nbsp;ìƒí’ˆëª…</th>
+					<th style="width: 135px; height: 45px;">&nbsp;ì´ìš©ì¼/ë§¤ìˆ˜</th>
+					<th style="width: 136px; height: 45px;">&nbsp;ì·¨ì†Œ ê°€ëŠ¥ ì—¬ë¶€</th>
+					<th style="width: 136px; height: 45px;">&nbsp;í˜„ìž¬ìƒíƒœ</th>
 				</tr>
 				<tr align="center">
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸ÅÀÏ</td>
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸Å¹øÈ£</td>
-					<td style="width: 239px; height: 45px;">&nbsp;»óÇ°¸í</td>
-					<td style="width: 135px; height: 45px;">&nbsp;ÀÌ¿ëÀÏ/¸Å¼ö</td>
-					<td style="width: 136px; height: 45px;">&nbsp;Ãë¼Ò °¡´É ¿©ºÎ</td>
-					<td style="width: 136px; height: 45px;">&nbsp;ÇöÀç»óÅÂ</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ì¼</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ë²ˆí˜¸</td>
+					<td style="width: 239px; height: 45px;">&nbsp;ìƒí’ˆëª…</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì´ìš©ì¼/ë§¤ìˆ˜</td>
+					<td style="width: 136px; height: 45px;">&nbsp;ì·¨ì†Œ ê°€ëŠ¥ ì—¬ë¶€</td>
+					<td style="width: 136px; height: 45px;">&nbsp;í˜„ìž¬ìƒíƒœ</td>
 				</tr>
 				<tr align="center">
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸ÅÀÏ</td>
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸Å¹øÈ£</td>
-					<td style="width: 239px; height: 45px;">&nbsp;»óÇ°¸í</td>
-					<td style="width: 135px; height: 45px;">&nbsp;ÀÌ¿ëÀÏ/¸Å¼ö</td>
-					<td style="width: 136px; height: 45px;">&nbsp;Ãë¼Ò °¡´É ¿©ºÎ</td>
-					<td style="width: 136px; height: 45px;">&nbsp;ÇöÀç»óÅÂ</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ì¼</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ë²ˆí˜¸</td>
+					<td style="width: 239px; height: 45px;">&nbsp;ìƒí’ˆëª…</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì´ìš©ì¼/ë§¤ìˆ˜</td>
+					<td style="width: 136px; height: 45px;">&nbsp;ì·¨ì†Œ ê°€ëŠ¥ ì—¬ë¶€</td>
+					<td style="width: 136px; height: 45px;">&nbsp;í˜„ìž¬ìƒíƒœ</td>
 				</tr>
 				<tr align="center">
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸ÅÀÏ</td>
-					<td style="width: 135px; height: 45px;">&nbsp;¿¹¸Å¹øÈ£</td>
-					<td style="width: 239px; height: 45px;">&nbsp;»óÇ°¸í</td>
-					<td style="width: 135px; height: 45px;">&nbsp;ÀÌ¿ëÀÏ/¸Å¼ö</td>
-					<td style="width: 136px; height: 45px;">&nbsp;Ãë¼Ò °¡´É ¿©ºÎ</td>
-					<td style="width: 136px; height: 45px;">&nbsp;ÇöÀç»óÅÂ</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ì¼</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì˜ˆë§¤ë²ˆí˜¸</td>
+					<td style="width: 239px; height: 45px;">&nbsp;ìƒí’ˆëª…</td>
+					<td style="width: 135px; height: 45px;">&nbsp;ì´ìš©ì¼/ë§¤ìˆ˜</td>
+					<td style="width: 136px; height: 45px;">&nbsp;ì·¨ì†Œ ê°€ëŠ¥ ì—¬ë¶€</td>
+					<td style="width: 136px; height: 45px;">&nbsp;í˜„ìž¬ìƒíƒœ</td>
 				</tr>
 			</tbody>
 		</table>
