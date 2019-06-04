@@ -140,12 +140,12 @@
 			<div id="div5" style="width: 300px; height: 20px;">
 				결제금액 확인
 			</div>
-			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 20px;">	
+			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 5px;">	
 			<div id="div6" style="width: 300px; height: 20px;">
 				10,000,000,000
 			</div>
 			</div>
-			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 20px;">
+			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 5px;">
 			<br/>
 			<br/>
 			<input id="chk1" type="checkbox" style="width: 16px; height: 16px; font-size: 16px;" >결제 사항 확인
