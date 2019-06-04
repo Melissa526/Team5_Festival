@@ -1,39 +1,82 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="EUC-KR">
 <title>Insert title here</title>
 <style type="text/css">
-#center {
-	margin-left: 25%;
-}
+	#center {
+		margin-left: 30%;
+	}
 
-#button {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-#radio{
-	margin-left: 50%;
-}
-table{
-	border: none;
-}
-td{
-	border-bottom: 1px solid #ccc;
-}
-
-    
+	#button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#radio{
+		margin-left: 50%;
+	}
+	table{
+		border: none;
+	}
+	td{
+		border-bottom: 1px solid #ccc;
+	}
+	#div1{
+		position: absolute;
+		margin-left: -12%;
+	}
+	 #div2{
+		position: absolute;
+		top: 425px;
+		margin-left: -12%;
+	}
+	#img1{
+		margin-left: 2.5%;
+	}
+    button{
+    	margin-top: 3%;
+    }
 </style>
 
 </head>
 <body>
 
-	<%@ include file="header2.jsp"%>
+	<%@ include file="header.jsp"%>
 
-	<br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/>
 	<div id="center">
+		
+		<div id="div1" style=" width: 200px; height: 150px; background-color: rgb(244, 244, 244); text-align: center;">
+			<br/>
+			<div style="color: red; font-size: 20px;">마이페이지</div>
+			<img id="img1" alt="img" src="img/wnf.png" style="width: 180px; height: 5px;">
+			<br/>
+			<div style="font-size: 16px;">
+				정민호님의 현재등급은<br/>
+				FAMILY입니다.
+			</div>
+			<button style="width: 60px; height: 20px; background-color: gray; color:rgb(255, 255, 255);
+			 text-align: center; border-radius: 4px; line-height: 1.5em; font-size: 12px;">내정보</button>
+			<button style="width: 100px; height: 20px; background-color: rgb(89, 202, 183); color: rgb(255, 255, 255);
+			 text-align: center; border-radius: 4px; line-height: 1.5em; font-size: 12px;">비밀번호 변경</button>
+		
+		
+		</div>
+		<div id="div2" style="width: 200px; height: 250px; background-color: rgb(244, 244, 244); text-align: center; ">
+			<div style="font-size: 16px;" style="margin-top: 5%;">
+				<div style="margin-top: 5%;">예매 화인·취소</div>
+					<div style="margin-top: 5%;">예매확인</div>
+					<div style="margin-top: 5%;">예매취소</div>	
+				<img id="img1" alt="img" src="img/wnf.png" style="width: 180px; height: 5px;"><br/>
+				<div style="margin-top: 5%;">즐겨찾기</div>
+				<div style="margin-top: 5%;">수정·목록·삭제</div>
+				<img id="img1" alt="img" src="img/wnf.png" style="width: 180px; height: 5px;"><br/>
+				<div style="margin-top: 5%;">회원탈퇴</div>				
+			</div>
+		</div>
+	
 		<div
 			style="background-color: rgb(255, 255, 255); border-width: 1px; border-style: dotted; border-color: rgb(51, 51, 51); height: 60px; width: 935px; text-align: center; vertical-align: center;">
 
