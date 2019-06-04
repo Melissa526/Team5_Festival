@@ -137,7 +137,7 @@
 			<input id="input5" type="text" style="width: 60px; height: 40px;">
 			<input id="input6" type="text" style="width: 60px; height: 40px;">
 			</div>
-			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 20px;">
+			<img id="img1" alt="img" src="img/wnf.png" style="width: 300px; height: 5px;">
 			<br/>
 			<br/>
 			<input id="chk1" type="checkbox" style="width: 16px; height: 16px; font-size: 16px;" >결제 사항 확인
