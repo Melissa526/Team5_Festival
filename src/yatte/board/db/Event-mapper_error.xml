@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE connector PUBLIC "-//Sun Microsystems, Inc.//DTD Connector 1.0//EN" "http://java.sun.com/dtd/connector_1_0.dtd" >
+
+<mapper namespace="muldelmapper">
+
+	<delete id="muldel" parameterType="map">
+		DELETE FROM MDBORD
+		WHERE POSTNUM IN
+		<foreach collection="postnums" item="postnum"
+			open="(" separator="," close=")">
+			#{postnum}	
+			
+		</foreach>
+
+	</delete>
+
+</mapper>
