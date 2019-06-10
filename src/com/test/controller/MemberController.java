@@ -1,4 +1,4 @@
-package yatte.member.controller;
+package hippe.member.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,11 +9,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-import yatte.func.lock.Sha256Encryption;
-import yatte.func.mail.SMTPMail;
-import yatte.member.dao.MemberDao;
-import yatte.member.dto.MemberDto;
+import hippe.func.lock.Sha256Encryption;
+import hippe.member.dao.MemberDao;
+import hippe.member.dto.MemberDto;
 
 @WebServlet("/memberController.do")
 public class MemberController extends HttpServlet {
@@ -29,13 +29,19 @@ public class MemberController extends HttpServlet {
 		MemberDao dao = new MemberDao();
 		
 		String command = request.getParameter("command");
-		System.out.println("<" +command+">");
+		System.out.println("[Member] - " +command);
 		
+		/*--------------- 메인화면 --------------*/
 		if(command.equals("main")) {
-			response.sendRedirect("main(pc).jsp");
+			response.sendRedirect("hippe_main/hippe_main.jsp");
 		} else if(command.equals("signupBtn")) {
-			response.sendRedirect("member_signup.jsp");
-		/*---------------- 회원성공 ----------------*/
+			response.sendRedirect("board_member/member_signup.jsp");
+		/*--------------- 로그인 --------------*/
+		} else if(command.equals("loginBtn")) {
+			response.sendRedirect("board_member/member_login.jsp");
+		} else if(command.equals("login")) {
+		
+		/*---------------- 회원 가입 ----------------*/
 		} else if(command.equals("signUp")) {
 			String member_id = request.getParameter("member_id");
 			String member_pw = Sha256Encryption.LockPassword(request.getParameter("member_pw"));
@@ -56,58 +62,84 @@ public class MemberController extends HttpServlet {
 			System.out.println("result : " + result);
 			if(result>0) {
 				System.out.println("(유저)" + dto.getMember_id() + " 님 회원가입 성공");
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("board_member/member_completion.jsp");
 			}else {
 				System.out.println("회원가입 실패");
 			}
 		} else if(command.equals("backToMain")) {
-			response.sendRedirect("index.jsp");
-		/*---------------- 회원탈퇴 ----------------*/
+			response.sendRedirect("main(pc).jsp");
+		/*---------------- 회원 탈퇴 ----------------*/
 		} else if(command.equals("disable")) {
 			String id = request.getParameter("id");
 			System.out.println("탈퇴할 아이디: " + id);
 			int res = dao.disableMember(id);
 			System.out.println("result : " + res);
 			if(res>0) {
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("main(pc).jsp");
 			}else {
 				PrintWriter out = response.getWriter();
 				out.println("<script>alert('회원탈퇴 실패!');"
-						+ "location.href='index.jsp';</script>");
+						+ "location.href='memberController.do?command=main';</script>");
 			}
 		/*--------------- 회원정보 수정 --------------*/
 		} else if(command.equals("")){
 			String member_id = request.getParameter("member_id");
 			MemberDto dto = dao.selectMyInfo(member_id);
 			request.setAttribute("dto", dto);
-			dispatch("member_mypage.jsp", request, response);
-			/*---------------로그인-------------*/
-		}else if(command.equals("loginup")) {
-			String member_id = request.getParameter("member_id");
-			String member_pw = request.getParameter("member_pw");
+			dispatch("board_member/member_mypage.jsp", request, response);
 			
+		/*----------------카카오톡 로그인----------------*/
+		}else if(command.equals("kakaologin")) {
+			response.sendRedirect("kakao_login.jsp");
+		
+		}else if (command.equals("kakao_login")) {
 			
-			 try {
-		           MemberDto dto = dao.selectMyInfo(member_id);
-		            if(dto.getMember_id() !=null) {
-		               if(dto.getMember_pw().equals(member_pw)) {
-		               jsResponse("로그인성공", "main(pc).jsp", response);
-		               
-		            }else {
-		               jsResponse("로그인실패", "member_login.jsp", response);
+			HttpSession session = request.getSession();
+			
+			String id = request.getParameter("kakaoid");
+			String name = request.getParameter("kakaoname");
+			System.out.println(id);
+			System.out.println(name);
 
+			request.getSession().setAttribute("id", id);
+			request.getSession().setAttribute("name",name );
+			
+			if(session !=null) {
+				jsReponse("로그인성공", "yatte-main.jsp", response);
+				
+			  }else {
+				  jsReponse("로그인실패", "kakao.jsp", response);
+			  }
+			/*---------------일반 로그인 ----------------*/
+			}else if(command.equals("loginin")) {
+		         response.sendRedirect("/Hippe/board_member/member_login.jsp");		         
+		    }else if(command.equals("loginup")) {
+				String member_id = request.getParameter("member_id");
+				String member_pw = request.getParameter("member_pw");
+				
+				
+				 try {
+			           MemberDto dto = dao.selectMyInfo(member_id);
+			            if(dto.getMember_id() !=null) {
+			               if(dto.getMember_pw().equals(member_pw)) {
+			             jsReponse("로그인성공", "main(pc).jsp", response);
+			               
+			            }else {
+			            	jsReponse("로그인실패", "member_login.jsp", response);
+
+						}
 					}
+					
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 				
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			}
-			
-		}
 		
+		      }
 	
-	}
+
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
@@ -118,15 +150,17 @@ public class MemberController extends HttpServlet {
 		dispatch.forward(request, response);
 	}
 	
-	public void jsResponse(String msg, String url, HttpServletResponse response) throws IOException { // HttpServletResponse -> printwrite out 쓸거니까
-	      String res = "<script type='text/javascript'>"
-	               +" alert('" + msg + "');"
-	               +" location.href='" + url + "';"
-	               +"</script>";
+	 public void jsReponse(String msg , String url, HttpServletResponse response) throws IOException {
+	      
+	      String res = "<script type = 'text/javascript'>"
+	      +"alert('"+msg+"');"
+	      +"location.href='"
+	      +url+"';"
+	      +"</script>";
 	      
 	      PrintWriter out = response.getWriter();
 	      out.println(res);
-	}
+	   }
 	
 }
 
