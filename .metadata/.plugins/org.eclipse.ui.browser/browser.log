@@ -1,0 +1,76 @@
+
+6월 11, 2019 15:23:03.73 NEW SESSION
+6월 11, 2019 15:23:03.74 [14760:15368:0611/152303.711:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+6월 11, 2019 15:41:16.89 [14760:15368:0611/154116.891:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 11, 2019 16:40:34.12 [14760:14740:0611/164034.116:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+6월 11, 2019 16:42:41.74 [14760:14740:0611/164241.740:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 11, 2019 16:42:41.98 [14760:15368:0611/164241.980:ERROR:browser_process_sub_thread.cc(217)] Waited 50 ms for network service
+6월 11, 2019 16:42:42.16 
+6월 11, 2019 16:42:42.16 KLIB_SelfTest return : KLR_OK
+
+6월 11, 2019 16:58:45.32 NEW SESSION
+6월 11, 2019 16:58:45.32 [4084:9428:0611/165845.315:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 11, 2019 16:58:45.41 [4084:15988:0611/165845.416:ERROR:browser_process_sub_thread.cc(217)] Waited 16 ms for network service
+6월 11, 2019 16:58:45.50 
+6월 11, 2019 16:58:45.50 KLIB_SelfTest return : KLR_OK
+
+6월 11, 2019 17:26:47.81 NEW SESSION
+6월 11, 2019 17:26:47.81 [8596:12592:0611/172647.810:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+6월 11, 2019 17:26:52.90 [8596:12592:0611/172652.903:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 11, 2019 17:26:53.02 [8596:1916:0611/172653.028:ERROR:browser_process_sub_thread.cc(217)] Waited 64 ms for network service
+6월 11, 2019 17:26:53.10 
+6월 11, 2019 17:26:53.11 KLIB_SelfTest return : KLR_OK
+
+6월 12, 2019 10:49:34.54 NEW SESSION
+6월 12, 2019 10:49:34.54 [10696:11212:0612/104934.503:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 12, 2019 10:49:34.61 [10696:7840:0612/104934.616:ERROR:browser_process_sub_thread.cc(217)] Waited 20 ms for network service
+6월 12, 2019 10:49:34.67 
+6월 12, 2019 10:49:34.67 KLIB_SelfTest return : KLR_OK
+
+6월 12, 2019 13:48:29.58 NEW SESSION
+6월 12, 2019 13:48:29.58 [1680:16732:0612/134829.576:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 12, 2019 13:48:29.62 [1680:9268:0612/134829.621:ERROR:browser_process_sub_thread.cc(217)] Waited 11 ms for network service
+6월 12, 2019 13:48:29.66 
+6월 12, 2019 13:48:29.66 KLIB_SelfTest return : KLR_OK
+6월 12, 2019 13:50:55.13 [1120:11240:0612/135055.129:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 12, 2019 13:50:55.17 [1120:12084:0612/135055.175:ERROR:browser_process_sub_thread.cc(217)] Waited 10 ms for network service
+6월 12, 2019 13:50:55.23 
+6월 12, 2019 13:50:55.23 KLIB_SelfTest return : KLR_OK
+6월 12, 2019 14:04:53.81 [16512:13680:0612/140453.817:ERROR:textfield.cc(1773)] NOT IMPLEMENTED
+6월 12, 2019 14:25:47.71 [16512:13680:0612/142547.706:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 12, 2019 14:25:47.80 [16512:6728:0612/142547.799:ERROR:browser_process_sub_thread.cc(217)] Waited 13 ms for network service
+6월 12, 2019 14:25:47.86 
+6월 12, 2019 14:25:47.87 KLIB_SelfTest return : KLR_OK
+
+6월 12, 2019 15:16:16.22 NEW SESSION
+6월 12, 2019 15:16:16.22 [17496:9008:0612/151616.222:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 12, 2019 15:16:16.27 [17496:14608:0612/151616.271:ERROR:browser_process_sub_thread.cc(217)] Waited 14 ms for network service
+6월 12, 2019 15:16:16.31 
+6월 12, 2019 15:16:16.31 KLIB_SelfTest return : KLR_OK
+
+6월 13, 2019 10:10:09.86 NEW SESSION
+6월 13, 2019 10:10:09.86 [10248:11212:0613/101009.861:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 13, 2019 10:10:09.96 [10248:15840:0613/101009.964:ERROR:browser_process_sub_thread.cc(217)] Waited 15 ms for network service
+6월 13, 2019 10:10:10.02 
+6월 13, 2019 10:10:10.02 KLIB_SelfTest return : KLR_OK
+
+6월 13, 2019 15:28:54.61 NEW SESSION
+6월 13, 2019 15:28:54.62 [10068:7668:0613/152854.596:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -106
+6월 13, 2019 15:32:59.42 [10068:7668:0613/153259.420:ERROR:socket_stream.cc(219)] Closing stream with result -2
+6월 13, 2019 15:33:03.12 [10068:7668:0613/153303.119:ERROR:connection_factory_impl.cc(413)] Failed to connect to MCS endpoint with error -21
+6월 13, 2019 15:50:10.50 [10068:2252:0613/155010.507:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 13, 2019 15:50:10.65 [10068:7668:0613/155010.655:ERROR:browser_process_sub_thread.cc(217)] Waited 39 ms for network service
+6월 13, 2019 15:50:10.76 
+6월 13, 2019 15:50:10.76 KLIB_SelfTest return : KLR_OK
+6월 13, 2019 16:11:13.51 [11848:17348:0613/161113.511:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 13, 2019 16:11:13.60 [11848:16708:0613/161113.608:ERROR:browser_process_sub_thread.cc(217)] Waited 17 ms for network service
+6월 13, 2019 16:11:13.67 
+6월 13, 2019 16:11:13.67 KLIB_SelfTest return : KLR_OK
+6월 13, 2019 16:26:43.43 [13652:19436:0613/162643.436:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 13, 2019 16:26:43.52 [13652:18648:0613/162643.520:ERROR:browser_process_sub_thread.cc(217)] Waited 21 ms for network service
+6월 13, 2019 16:26:43.61 
+6월 13, 2019 16:26:43.61 KLIB_SelfTest return : KLR_OK
+6월 13, 2019 16:37:27.90 [9360:3136:0613/163727.898:ERROR:http_bridge.cc(127)] NOT IMPLEMENTED
+6월 13, 2019 16:37:28.00 [9360:9584:0613/163728.005:ERROR:browser_process_sub_thread.cc(217)] Waited 20 ms for network service
+6월 13, 2019 16:37:28.11 
+6월 13, 2019 16:37:28.12 KLIB_SelfTest return : KLR_OK

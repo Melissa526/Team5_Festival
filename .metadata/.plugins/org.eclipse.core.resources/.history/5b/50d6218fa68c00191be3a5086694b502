@@ -1,0 +1,101 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, initial-scale=1">
+<!-- include libraries(jQuery, bootstrap) -->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+
+<!-- include summernote css/js-->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+<script type="text/javascript" src="../js/smarteditor/js/service/HuskyEZCreator.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#summernote').summernote({
+            height: 500,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true                  // set focus to editable area after initializing summernote
+    });
+})
+</script>
+<script type="text/javascript">
+function onLoadedFunction(){
+this.eleTxt.setHtml(‘<textarea name="content" id="content" rows="10" cols="100"></textarea>’);
+this.eleBtn.setHtml(‘<button class=”saveBtn”>저장</button>’);
+
+	var oEditors = [];
+	nhn.husky.EZCreator.createInIFrame({
+	
+	    oAppRef: oEditors,
+	    elPlaceHolder: "content",
+	    sSkinURI: "../js/smarteditor/SmartEditor2Skin.html",
+	    fCreator: "createSEditor2"
+	});
+	
+	$(document).on('click', '.saveBtn', function () {
+
+
+        var val2 = oEditors.getById["ir1"].exec("UPDATE_CONTENTS_FIELD", []);
+
+        this.contents = $('#ir1').val();
+
+        alert(this.contents);
+
+        this.onSubmitBtnClick();
+
+	});
+}
+</script>
+
+<title>야때(Yatte!) - 자유게시판(글작성)</title>
+</head>
+ <!--booststrap-->
+  <link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="../resources/css/font-awesome.min.css" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="../resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+</head>
+<body>
+<%@ include file="../common/hippe_header.jsp" %>
+
+	<!-- <form action="freeController.do" method="post">
+		<input type="hidden" name="command" value="insert">
+		<table border="1">
+			<col width="100">
+			<col width="350">
+	
+			<tr>
+				<th>작성자</th>
+				<td><input type="text" name="writer"></td>
+			</tr>
+			<tr>
+				<th>제목</th>
+				<td><input type="text" name="title"></td>
+			</tr>
+			<tr>
+				<th>내용</th>
+				<td><textarea rows="10" cols="60" name="content"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="submit" value="작 성">				
+					<input type="button" value="취  소" onclick="location.href='freeController.do?command=selectlist'">				
+				</td>
+			</tr>
+		</table>
+	</form> -->
+	
+
+</body>
+</html>

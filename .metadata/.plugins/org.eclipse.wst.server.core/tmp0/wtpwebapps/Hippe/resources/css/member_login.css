@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.div_loginfield {
+	position: absolute;
+    padding-top: 2em;
+    top: 20%;
+    left: 40%;
+    width: 23%;
+    height: 30em;	
+}
+
+.div_findAccout{
+	margin: 30px 5px 15px 5px;
+	text-align: center;
+}
+
+.btn_login {
+	position: absolute;
+    width: 100px;
+    height: 115px;
+    left: 13.5em;
+    top: 2.5em;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 7.5em;
+    border-radius: 4px;
+    background-color: rgb(89, 202, 183);
+    cursor: pointer;
+}
+
+.find, .join {
+	font-size: 14px;
+	color: rgb(190, 190, 190);
+	text-decoration: underline;
+	left: 20px;
+}
+
+.with_kakao { cursor: pointer;}
+
+.with_naver { background-color: rgb(96, 200, 63);
+			  cursor: pointer;
+			  top: 2em; }
+
+.btn_loginAPI{
+	width: 222px;
+	height: 48px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 16px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height : 3.2em;
+	border-radius : 0.4em;
+	margin-top: 0.7em;
+	
+}
+
+input[type=text], select {
+	width: 200px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=password], select {
+	width: 200px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+p {
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+}

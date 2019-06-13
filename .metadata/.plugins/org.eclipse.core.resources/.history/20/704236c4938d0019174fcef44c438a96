@@ -1,0 +1,98 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, initial-scale=1">
+<title>야때(Yatte!) - 자유게시판</title>
+<style type="text/css">
+.table_detail{
+	border-collapse: collapse;
+	position: absolute;
+	top: 30%;
+	left : 28%;
+	width: 32%;
+	height: auto;
+	margin: 50px;
+	/* border: 1px solid; */
+	/* //border-color: blue; */
+	height: 1000px;
+	border-top: black;
+	border-bottom: #8A8A8A;
+   }
+.div_top_title{
+	position: absolute;
+	top : 20%;
+	left : 40%;
+}   
+
+table th {
+ 	background-color: rgb(237, 237, 237);
+ 	text-align: center;
+ 	border-bottom: black;
+}
+table td{
+	text-align: center;
+}
+</style>
+ <!--booststrap-->
+  <link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="../resources/css/font-awesome.min.css" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="../resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+</head>
+<body>
+<%@ include file="../common/hippe_header.jsp" %>
+		<jsp:useBean id="dto" class="hippe.board.dto.BoardDto" scope="request"></jsp:useBean>
+		
+	<div class="div_top_title">
+		<h5 class="top-title mb-lg-4 mb-3 text-center">BOARD</h5>
+		<h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">자유게시판</h3>
+	</div>
+
+		<input type="hidden" name="command" value="delete">
+		<table class="table_detail">
+			<col width = "100">
+			<col width = "350">
+			<tr>
+				<th>글번호</th>
+				<td colspan="1"><jsp:getProperty property="postnum" name="dto" /></td>
+			</tr>
+			<tr>	
+				<th>작성자</th>
+				<td><jsp:getProperty property="writer" name="dto"/></td>
+				
+			</tr>
+			<tr>
+				<th>작성일</th>
+				<td><jsp:getProperty property="regdate" name="dto"/></td>
+			</tr>
+			<tr>
+				<th>제 목</th>
+				<td><jsp:getProperty property="title" name="dto"/></td>
+			</tr>
+			<tr>
+				<th>내 용</th>
+					<td>
+						<textarea rows="10" cols="60" readonly="readonly"><jsp:getProperty property="content" name="dto"/>
+						</textarea>
+					</td>
+			</tr>
+			<tr>
+			<th></th>
+				<td align="right">
+					<input type="button" value="글 목록" onclick="location.href='freeController.do?command=selectlist'" >
+					<input type="button" value="수  정" onclick="location.href='freeController.do?command=updateform&postnum=<jsp:getProperty property="postnum" name="dto"/>'">
+					<input type="button" value="삭  제" onclick="location.href='freeController.do?command=delete&postnum=<jsp:getProperty property="postnum" name="dto"/>'">
+					<input type="button" value="답  변" onclick="location.href='freeController.do?command=answerform&postnum=<jsp:getProperty property="postnum" name="dto"/>'">
+				</td> 
+			</tr>		
+		</table>	
+</body>
+</html>

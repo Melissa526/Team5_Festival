@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+#center {
+	margin-left: 30%;
+}
+
+/* div 설정 */
+.div_top_title{    
+	position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.div_map {
+	position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: 50px 50px 50px 25px;
+    padding: 0;
+}
+
+.div_balloon {
+	position : absolute;
+	top : 50%;
+	right : 10%;
+	z-index : 500;
+	display: inline-block;
+	height: 75%;
+	width: 37%;
+	margin: 0 auto 10px;	
+	background: #fff;		
+	border : 1.5px solid rgb(255,192,203);
+}
+
+.aboutTicket{
+	background: #f3f3f3;
+}
+
+#img_korea{	z-index : -100; }
+
+.img_city{ 
+	display : block; 
+	opacity: 0;
+	text-decoration: none;
+	position : absolute;
+	z-index: 100;
+	cursor: pointer;
+}
+
+#jeju{ top: 93.8%;    left: 5.8%;} 					
+#seoul{ top: 17.4%; left: 17.6%; z-index: 500;}	
+#gyeongi{top: 6.0%;	left: 7.1%;}					
+#gangwon{ top: 0.1%;	left: 27.1%; }				
+#chungnam{ top: 30.5%;}							
+#chungbuk{top: 26.65%; left: 29.55%;}				
+#jeonnam{ top: 63%; left: 2.3%;}					
+#jeonbuk{top: 49.1%;  left: 7.6%;}					
+#gyeongnam{top: 54.2%; left: 37.5%;}				
+#gyeongbuk{top: 16.8%; left: 43%;}		
+			
+#jeju:hover{opacity: 1; }
+#seoul:hover{opacity: 1;}
+#gyeongi:hover{opacity: 1;}	
+#gangwon:hover{opacity: 1;}
+#chungnam:hover{opacity: 1;}
+#chungbuk:hover{opacity: 1;}
+#jeonnam:hover{opacity: 1;}
+#jeonbuk:hover{opacity: 1;}
+#gyeongnam:hover{opacity: 1;}
+#gyeongbuk:hover{opacity: 1;}
+
