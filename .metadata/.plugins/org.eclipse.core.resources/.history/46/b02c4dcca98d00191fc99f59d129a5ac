@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, initial-scale=1">
+<title>야때(Yatte!) - 자유게시판</title>
+ <!--booststrap-->
+  <link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="../resources/css/font-awesome.min.css" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="../resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+  <link href="../resources/css/boarddetail.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<%@ include file="../common/hippe_header.jsp" %>
+		<jsp:useBean id="dto" class="hippe.board.dto.BoardDto" scope="request"></jsp:useBean>
+		
+	<div class="div_top_title">
+		<h5 class="top-title mb-lg-4 mb-3 text-center">BOARD</h5>
+		<h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">자유게시판</h3>
+	</div>
+		<div class="content">
+		<input type="hidden" name="command" value="delete">
+		<div class="table">
+		<table class="table_board">
+			<tr>
+				<td id="title" colspan="2"><jsp:getProperty property="title" name="dto"/></td>
+			</tr>
+			<tr>
+			<td id ="writer"><jsp:getProperty property="writer" name="dto"/></td>
+			<td id="regdate"><jsp:getProperty property="regdate" name="dto"/></td>
+			</tr>	
+			<tr>
+				<td colspan="2"><div id="content"><jsp:getProperty property="content" name="dto"/></div></td>
+			</tr>
+		</table>
+			<div id ="btn">
+				<input type="button" value="글 목록" onclick="location.href='freeController.do?command=selectlist'" >
+				<input type="button" value="수  정" onclick="location.href='freeController.do?command=updateform&postnum=<jsp:getProperty property="postnum" name="dto"/>'">
+				<input type="button" value="삭  제" onclick="location.href='freeController.do?command=delete&postnum=<jsp:getProperty property="postnum" name="dto"/>'">
+				<input type="button" value="답  변" onclick="location.href='freeController.do?command=answerform&postnum=<jsp:getProperty property="postnum" name="dto"/>'">		
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,335 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hippe || 대한민국 가장 힙한 페스티벌, 히페 :: Home :: </title>
+<!--meta tags -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Yield Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+  <!--stylesheets-->
+  <link href="../resources/css/style.css" rel='stylesheet' type='text/css' media="all">	
+  <!--booststrap-->
+  <link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <!-- font-awesome icons -->
+  <link href="../resources/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Google Web Font -->
+  <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+</head>
+<script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+</script>
+<body>
+	<!-- Header -->
+	<jsp:include page="../common/hippe_header.jsp"></jsp:include>
+
+  <!-- Slider -->
+  <div class="main-top" id="home">
+    <div class="slider-img ">
+      <div class="container">
+        <div class="slider-info">
+          <h4>대한민국 힙한 페스티벌</h4>
+          <h1>히페(Hippe)</h1>
+          <p>대한민국 전역에서 열리는 힙~한 페스티벌, 여기서 모두 만나보세요!</p>
+        </div>
+        <div class="outs_more-buttn mt-md-4 mt-3">
+          <a href="../festivalController.do?command=list">더 보러가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Calendar -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-6 about-imgs-txt my-3">
+          <img src="../resources/images/calendar-img.png" alt="news image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 about-two-grids my-3">
+          <h5 class="top-title mb-lg-4 mb-3"> About</h5>
+          <h2 class="mb-md-3 mb-sm-3 mb-3">We are organic farm food.live organic for live healthy 100% organic goods</h2>
+          <div class="about-para-txt">
+            <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
+              ut labore consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum
+              dolor sit amet consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet </p>
+          </div>
+          <h6 class="my-lg-5 my-md-4 my-3">fresh from Yield farm</h6>
+          <div class="about-para-txt">
+            <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
+              ut labore et consectetur adipiscing sed do eiusmod tempor incididunt</p>
+          </div>
+          <div class="outs_more-buttn mt-md-4 mt-3">
+            <a href="#blog">더 보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Ticket Matter 영역 -->
+  <section class="advertise-count py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="order-show-w3ls ">
+        <h4>10 Health Benefits: What Secrets Do Watermelons Keep?</h4>
+        <div class="outs_more-buttn mt-md-4 mt-3">
+          <a href="#contact">예매하러 가기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TicketBox 영역 -->
+  <section class="aboutTicket py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-6 about-imgs-txt my-3">
+          <img src="../resources/images/calendar-img.png" alt="news image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 about-two-grids my-3">
+          <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">Ticket</h3>
+          <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">티켓목록 미리보기 보여주기</h3>
+          <h2 class="mb-md-3 mb-sm-3 mb-3">We are organic farm food.live organic for live healthy 100% organic goods</h2>
+          <div class="about-para-txt">
+            <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
+              ut labore consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum
+              dolor sit amet consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet </p>
+          </div>
+          <h6 class="my-lg-5 my-md-4 my-3">fresh from Yield farm</h6>
+          <div class="about-para-txt">
+            <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
+              ut labore et consectetur adipiscing sed do eiusmod tempor incididunt</p>
+          </div>
+          <div class="outs_more-buttn mt-md-4 mt-3">
+            <a href="#blog">더 보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Review -->
+  <section class="gallery py-lg-4 py-md-3 py-sm-3 py-3" id="gallery">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">Reviews</h3>
+      <h3 class="top-title mb-lg-4 mb-3 text-center">여행지의 다양한 소식을 받아보세요!</h3>
+      <div class="row gallery-info no-gutters">
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid ">
+          <div class="gallery-grids">
+            <a href="#gal1">
+              <img src="../resources/images/g1.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid ">
+          <div class="gallery-grids">
+            <a href="#gal2">
+              <img src="../resources/images/g6.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid">
+          <div class="gallery-grids">
+            <a href="#gal3">
+              <img src="../resources/images/g3.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid">
+          <div class="gallery-grids">
+            <a href="#gal4">
+              <img src="../resources/images/g4.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid ">
+          <div class="gallery-grids">
+            <a href="#gal5">
+              <img src="../resources/images/g2.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 gallery-img-grid ">
+          <div class="gallery-grids">
+            <a href="#gal6">
+              <img src="../resources/images/g5.jpg" alt="news image" class="img-fluid">
+            </a>
+          </div>
+        </div>
+        <!-- popup-->
+        <div id="gal1" class="popup-effect">
+          <div class="popup">
+            <img src="../resources/images/g1.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal2" class="popup-effect">
+          <div class="popup">
+            <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal3" class="popup-effect">
+          <div class="popup">
+            <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal4" class="popup-effect">
+          <div class="popup">
+            <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal5" class="popup-effect">
+          <div class="popup">
+            <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+        <!-- popup-->
+        <div id="gal6" class="popup-effect">
+          <div class="popup">
+            <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+            <a class="close" href="#gallery">&times;</a>
+          </div>
+        </div>
+        <!-- //popup -->
+      </div>
+    </div>
+  </section>
+  <!--//Reivew  -->
+  
+  <!-- Event  -->
+  <section class="blog py-lg-4 py-md-3 py-sm-3 py-3" id="blog">
+    <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">Events</h3>
+      <h5 class="top-title mb-lg-4 mb-3 text-center">Hippe의 다양한 이벤트도 참여해보세요!</h5>
+      <div class="row">
+        <div class="col-lg-6 blog-first-grid">
+          <div class="blog-txt text-center">
+            <h5>
+              <a href="#about">Arrived Fresh Lemons </a>
+            </h5>
+          </div>
+        </div>
+        <div class="col-lg-6 bolg-right-grids">
+          <h4 class="pb-3">
+            <a href="#about">Health Benefits of a Raw Food</a>
+          </h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+          </p>
+          <div class="mt-3 blog-date-time">
+            <ul>
+              <li class="mr-3">Comments
+                <a href="#about" class="pl-1">7</a>
+              </li>
+              <li>Views
+                <a href="#about" class="pl-1">5</a>
+              </li>
+            </ul>
+          </div>
+          <div class="outs_more-buttn mt-md-4 mt-3">
+            <a href="#about">자세히 보기</a>
+          </div>
+        </div>
+        <div class="col-lg-6 bolg-right-grids text-md-right">
+          <h4 class="pb-3">
+            <a href="#about">6 After-School Snacks the Kid Will Love</a>
+          </h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum
+          </p>
+          <div class="mt-3 blog-date-time">
+            <ul>
+              <li class="mr-3">Comments
+                <a href="#about" class="pl-1">7</a>
+              </li>
+              <li>Views
+                <a href="#about" class="pl-1">5</a>
+              </li>
+            </ul>
+          </div>
+          <div class="outs_more-buttn mt-md-4 mt-3">
+            <a href="#about">자세히 보기</a>
+          </div>
+        </div>
+        <div class="col-lg-6 blog-second-grid">
+          <div class="blog-txt text-center">
+            <h5>
+              <a href="#about">Sweet & Fresh Strawberry</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//blog -->
+  
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-7 col-md-6 contact-form-txt">
+          <form action="#" method="post">
+            <div class="form-group contact-forms">
+              <input type="text" class="form-control" placeholder="Name" required="">
+            </div>
+            <div class="form-group contact-forms">
+              <input type="email" class="form-control" placeholder="Email" required="">
+            </div>
+            <div class="form-group contact-forms">
+              <input type="text" class="form-control" placeholder="Phone" required="">
+            </div>
+            <div class="form-group contact-forms">
+              <textarea class="form-control" placeholder="Message" rows="3" required=""></textarea>
+            </div>
+            <button type="submit" class="btn sent-butnn">Send</button>
+          </form>
+        </div>
+        <div class="col-md-5 contact-grided-right">
+          <h5 class="top-title mb-lg-4 mb-3 text-center">Contact Us</h5>
+          <h3 class="title mb-lg-5 mb-md-4 mb-sm-4 mb-3 text-center">Get In Touch</h3>
+          <div class=" footer-top text-center">
+            <p>
+              <span>Address</span> : Melbourne St,South
+              <br>Birbane 4101 Austraila.</p>
+            <p class="pt-lg-3 pt-2">
+              <span> Phone</span> : +(000) 123 4565 32</p>
+            <p class="pt-lg-3 pt-2">
+              <span>Email</span> :
+              <a href="mailto:info@example.com">info@example1.com</a>
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//contact -->
+  <!--  footer -->
+  <jsp:include page="../common/hippe_footer.jsp"></jsp:include>
+</body>
+</html>

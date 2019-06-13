@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+img {vertical-align: middle;}
+
+#div_list{
+	
+}
+
+#div_calendar{
+	position: absolute; 
+	top: 200%;
+	left: 24%; 
+	width:30em; 
+	height:30em;
+	border : 1px solid red;
+}
+
+	.mySlide{
+		margin: 0px;
+		padding : 0px;
+		
+	}
+	.bx-wrapper{
+		border : 0px;
+	}
+	img{ width :100%; }
+	
+	
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.div_callist{
+	position : relative;
+	top : 600%;
+	width : 800px;
+	height : 500px;
+	border: 1px solid red;
+}

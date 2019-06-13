@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+window.onload = $(function(){
+    $("#date1").datepicker({
+       dateFormat:"yymmdd" ,
+      showMonthAfterYear : true ,
+      changeMonth : true ,
+      changeYear : true ,
+      numberOfMonths:1 ,
+      dayNamesMin : ["일","월","화","수","목","금","토"] ,
+      monthNamesShort:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"] ,
+      minDate : -0,
+      onClose:function(selectedDate){ 
+         $("#endDatePicker").datepicker("option","minDate",selectedDate);
+         } ,beforeShow : function(input){ 
+            var i_offset = $(input).offset(); 
+            setTimeout(function(){ 
+               $("#ui-datepicker-div").css({"top":i_offset.top  , "bottom" :"" , left : i_offset.left}) 
+               }) 
+              }
+    });
+
+});
+</script>
+</head>
+<body>
+<div id="date1" style="border: 1px;"></div>
+</body>
+</html>

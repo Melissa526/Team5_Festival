@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html> 
+<meta charset="UTF-8" /> 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> 
+<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js" type="text/javascript"></script> 
+<script> 
+$(function() { $( "#datepicker_kor" ).datepicker({ 
+	dateFormat: 'yy-mm-dd', 
+	prevText: '이전 달', 
+	nextText: '다음 달',
+	monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], 
+	monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], 
+	dayNames: ['일','월','화','수','목','금','토'], 
+	dayNamesShort: ['일','월','화','수','목','금','토'], 
+	dayNamesMin: ['일','월','화','수','목','금','토'], 
+	showMonthAfterYear: true, y
+	earSuffix: '년', 
+	showOn: "button", 
+	buttonImage: "/images/plan.jpg", //버튼 이미지
+	buttonImageOnly: true, 
+	changeMonth: true, //월 변경 
+	changeYear: true //년도 변경 }); }); 
+	</script> 
+	<script> 
+	$(function() { $( "#datepicker_default" ).datepicker({ 
+		dateFormat: 'yy-mm-dd' }); }); 
+	</script> 
+	<style type="text/css"> /*달력 CSS*/ 
+	.ui-datepicker{ font-size: 12px; width: 160px; }
+	.ui-datepicker select.ui-datepicker-month{ width:30%; font-size: 11px; } 
+	.ui-datepicker select.ui-datepicker-year{ width:40%; font-size: 11px; } 
+	</style> 
+	
+	<p>국문: <input type="text" id="datepicker_kor"></p> 
+	<p>기본(영문): <input type="text" id="datepicker_default"></p>
+

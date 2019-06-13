@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.div_display {
+	width: 100%;
+	height: 500px;
+	position: relative;
+	left: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	background: pink;
+}
+
+.div_ticketbox {
+	position: relative;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	margin-top: 50px;
+	text-align: center;
+	border: 1px solid red;
+}
+
+.img_poster {
+	/* width: 200px; */
+	width: 85%;
+	height: 300px;
+	margin: 15px 20px 15px 20px;
+	padding: 0;
+	border: 1px solid gray;
+	display: block;
+}
+.img_poster:hover{
+	cursor: pointer;
+}
+.txt_info {
+	width: 200px;
+	height: 60px;
+	margin: 15p 20px 15px 20px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 나눔고딕, NanumGothic;
+	font-weight: 200;
+	display: inline;
+}
+
+.txt_info:hover{
+	cursor: pointer;
+	color: rgb(240,123,125);
+}
+
+.pamphlet{
+	border: 1px solid green;
+	display: inline-block;	
+	margin-bottom: 50px;
+}
+
+@media(max-width: 800px) {
+	
+.img_poster {
+	width: 175px;
+	height: 225px;
+	margin: 5px 10px 5px 10px;
+}
+	
+}

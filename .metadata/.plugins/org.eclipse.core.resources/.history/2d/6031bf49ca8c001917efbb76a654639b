@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, initial-scale=1">
+<title>Hippe || 대한민국 가장 힙한 페스티벌, 히페 :: 로그인 ::</title>
+<link href="../resources/css/member_login.css" rel="stylesheet" type="text/css">
+<!--booststrap-->
+<link href="../resources/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<!--//booststrap end-->
+<!-- font-awesome icons -->
+<link href="../resources/css/font-awesome.min.css" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!--stylesheets-->
+<link href="../resources/css/style.css" rel='stylesheet' type='text/css' media="all">
+<!--//stylesheets-->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.js"></script>
+<script type="text/javascript" src="../resources/js/member.js"></script>
+<body>
+<jsp:include page="../common/hippe_header.jsp"></jsp:include>
+
+<div class="div_loginfield">
+	<form action="" method="get" class="loginform">
+	 	<input type="hidden" name="command" value="login">
+        <div class="div_IdPw_input">
+            <p><input type="text" placeholder="아이디" name="member_id"></p>
+            <p><input type="password" placeholder="비밀번호" name="member_pw"></p> 
+        </div>
+        <span class="btn_login" onclick="loginForm()">LOGIN</span>
+     </form>
+     
+     <p><input type="checkbox" id="registID">아이디 저장</p>
+
+	<div class="div_findAccout">
+	     <span class="find">아이디/비밀번호 찾기</span> &nbsp;
+	     <span class="join">회원가입</span><br/>
+     </div>    
+     
+     <div class="btn_loginAPI with_kakao" id="btn_KakaoLogin">카카오 로그인</div>
+     <div class="btn_loginAPI with_naver" id="naverIdLogin"onclick="location.href='memberController.do?command=naverlogin'">네이버 로그인</div>
+ </div>
+
+
+</body>
+</html>

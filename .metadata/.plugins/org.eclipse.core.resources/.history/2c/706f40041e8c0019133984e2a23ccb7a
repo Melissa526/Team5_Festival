@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body{ overflow-x: hidden;}
+
+.div_top_title{
+	position: absolute;
+	top : 20%;
+	left : 28%;
+}
+.div_top_search{
+	position: absolute;
+	top: 38%;
+	right: 23.5%;
+	font-size: 14px;
+}
+.div_btn{
+	width: 300px;
+	height : 50px;
+	position: absolute;
+	right : 15%;
+	margin: 10px;
+}
+.content {
+	position: absolute;
+	top: 42%;
+	left : 5%;
+	width: 85%;
+	height: auto;
+	margin: 50px;
+	/* border: 1px solid; */
+	/* //border-color: blue; */
+	height: 1000px;
+}
+
+.table {
+	position: absolute;
+	text-align: center;
+	left: 10%;
+	top: 10px;
+	width: 70%;
+	height: 20%;
+}
+
+.table_board {
+	width: 80%;
+	max-width: 100%;
+	height: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border: 2px solid #ccc;
+	table-layout: fixed;
+	border: none;
+	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+table.table_board td, table.table_board th, table.table_board a {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-size: 14px;
+	height: 60px;
+}
+
+.table th {
+	background-color: rgb(237, 237, 237);;
+}
+
+.search_tb {
+	position: relative;
+	top: 30px;
+	left: 37%;
+}
+
+.keyword {
+	left: 157px;
+	top: 0px;
+	width: 200px;
+	height: 30px;
+	padding-left: 3px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.keyField {
+	top: 0px;
+	left: 65px;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #ccc;
+	color: #000;
+}
+
+.paging {
+	width : 300px;
+	height : 50px;
+	position: relative;
+	top: 25%;
+	left : 30%;
+}
+
+#btnSearch{
+	width: 60px; height: 30px;
+	border-radius: 5px;	
+}
+
+#btnWrite, #btnSelectDelete{
+	width: 80px; height: 30px;
+	margin : 5px;
+	border-radius: 5px;
+}
+
+/*------------------------------------- 반응형 CSS ---------------------------------------------*/
+@media(max-width: 800px) {
+	
+}
+
+@media all and (max-width: 767px) {
+
+}
+
+@media all and (max-width: 568px) {
+
+}
+
+@media all and (max-width: 320px) {
+
+}
+
+

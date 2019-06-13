@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.all_content {
+	border: 1px solid;
+	border-color: blue;
+	height: 800px;
+}
+
+div .pic{
+	width: 250px;
+	height: 200px;
+	border: 1px dotted;
+	border-color: red;
+}
+div .content{
+	width: 250px;
+	height: 200px;
+	border: 1px dotted;
+	border-color: red;
+}
+
+
+.write {
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 2.5em;
+	border-radius: 4px;
+	background-color: rgb(89, 202, 183);
+	position: absolute;
+	left: 75%;
+	width: 174px;
+	height: 40px;
+}
+
+.piccontent1{
+	position: absolute;
+	top: 250px;
+	left: 10%;
+}
+
+.piccontent2{
+	position: absolute;
+	top: 250px;
+	left: 30%;
+}
+
+.piccontent3{
+	position: absolute;
+	top: 250px;
+	left: 50%;
+}
+
+.piccontent4{
+	position: absolute;
+	top: 250px;
+	left: 70%;
+}

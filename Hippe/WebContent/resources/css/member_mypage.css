@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+.div_mid{
+	border: 1px solid red;
+	width : 50%;
+	height: auto;
+	position : absolute;
+	top: 35%;
+	left: 25%;
+}
+.div_box{
+	width: 40%;
+	height : 180px;
+	background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgb(51, 51, 51);
+    display: inline-table;
+    margin : 10px;
+    font-size: 14px; 
+    color:#000;
+}
+/* 
+#mypage{
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgb(51, 51, 51);
+    width: 285px;
+    height: 185px;
+    }
+#reservations {
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    order-color: rgb(51, 51, 51);
+    width: 285px;
+    height: 185px;
+    top: 300px;
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+    top: 63%;
+    left: 30%;
+    }
+#leave {
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgb(51, 51, 51);
+    width: 285px;
+    height: 185px;
+    top: 449px;
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+	left: 72%;
+    top: 63%;;
+    }
+#bookmark {
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgb(51, 51, 51);
+    width: 285px;
+    height: 185px;
+    font-weight: normal;
+    font-size: 25px;
+    position: absolute;
+    left: 72%;
+    top: 35%;
+} */
+#mypage_img{
+	top: 40px;
+}
+#reset{
+	font-weight: normal; 
+	font-size: 25px;
+}
+#reservations2{
+	color: rgb(255, 255, 255); 
+	text-align: center; 
+	line-height: 2.3em; 
+	border-radius: 4px;
+	background-color: rgb(89, 202, 183); 
+	width: 70px; 
+	height: 35px; 
+	top: 110px;
+	margin-top: 110px;
+	margin-left:307px;
+}
+#modify{
+	position: absolute;
+	top: 150px;
+    left: 319px;
+	font-size: 14px; 
+	color: rgb(255, 255, 255); 
+	text-align: center; 
+	line-height: 2.3em; 
+	border-radius: 4px;
+	background-color: rgb(89, 202, 183); 
+	width: 70px; 
+	height: 35px;
+	z-index: 100px;
+}
+#modify2{
+	font-size: 14px; 
+	color: rgb(255, 255, 255); 
+	text-align: center; 
+	line-height: 2.3em; 
+	border-radius: 4px;
+	background-color: rgb(89, 202, 183); 
+	width: 70px; 
+	height: 35px; 
+	top: 110px;
+	margin-top: 110px;
+	margin-left:307px;
+	z-index: 100px;
+}
+#modify3{
+	font-size: 14px; 
+	color: rgb(255, 255, 255); 
+	text-align: center; 
+	line-height: 2.3em; 
+	border-radius: 4px;
+	background-color: rgb(89, 202, 183); 
+	width: 70px; 
+	height: 35px; 
+	margin-top: 110px;
+	margin-left:307px;
+	z-index: 100px;
+}
+
+
+/*-----------------------------반응형 css--------------------------------*/
+
+
+@media(max-width: 800px) {
+
+}
+@media(max-width: 767px) {
+
+}
+@media(max-width: 568px){
+	
+}
+@media(max-width: 320x){
+	
+}

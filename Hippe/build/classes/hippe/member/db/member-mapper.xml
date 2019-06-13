@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "member-mapper">
+
+	<insert id="insertMember" parameterType="MemberDto">
+		INSERT INTO MEMBER VALUES(#{member_id}, #{member_pw}, #{member_name}, #{member_phone}, 
+		#{member_address}, #{member_email}, 'Y', '회원')
+	</insert>
+	<select id="selectMyInfo" parameterType="String" resultType="MemberDto">
+		SELECT * FROM MEMBER WHERE MEMBER_ID = #{MEMBER_ID}
+	</select>
+	
+	
+	<delete id="deleteMember" parameterType="String">
+		DELETE FROM MEMBER WHERE MEMBER_ID = #{member_id}
+	</delete>
+
+
+
+</mapper>
